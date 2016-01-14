@@ -1,0 +1,69 @@
+.news {
+  h2{
+    margin-top: 50px;
+  }
+  section{
+    padding-bottom: 40px;
+    .news-photo {
+      text-align: center;
+      img {
+        max-width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+}
+.recomended {
+  nav.choose-category {
+    ul {
+      list-style-type: none;
+      li {
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 10px 15px;
+          text-align: center;
+          font-size: (14/12)*1em;
+          color: $second-color;
+          font-weight: 900;
+          &:hover {
+            color: $link-color-hover;
+          }
+        }
+    }
+    }
+  }
+  .products {
+    .top-product {
+      figure {
+        margin: 40px 0;
+        h3 {
+          margin: 25px 0;
+          &+p{
+            margin-bottom: 30px;
+          }
+        }
+        span.price {
+          text-align: left;
+        }
+      }
+    }
+    section {
+      article {
+        margin-top: 40px;
+        h3 {
+          font-weight: 400;
+          font-size: 1em;
+        }
+      }
+    }
+
+    .product-icon {
+      margin-left: auto;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
