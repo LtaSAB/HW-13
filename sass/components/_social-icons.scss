@@ -1,0 +1,87 @@
+.social-elements {
+  padding-bottom: 40px;
+  .f-page & {
+    margin-top: 30px;
+  }
+  li {
+    vertical-align: middle;
+    a {
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: white;
+      &:hover {
+        background-color: chocolate !important;
+      }
+      .fa {
+        vertical-align: text-bottom;
+      }
+      &.youtube {
+        background-color: #ff0000;
+      }
+      &.circle {
+        background-color: #dbdbdb;
+        span {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background-color: #00abf0;
+          border-radius: 50%;
+          vertical-align: middle;
+          &:first-child {
+            background-color: #2a85e8;
+          }
+          &:last-child {
+            background-color: #f635a3;
+          }
+        }
+      }
+      &.vkontakte {
+        background-color: #41658b;
+        span {
+          vertical-align: middle;
+          font-weight: 500;
+        }
+      }
+      &.odnoklassniki {
+        background-color: #f4960f;
+      }
+      &.facebook {
+        background-color: #41658b;
+      }
+      &.twitter {
+        background-color: #00abf0;
+      }
+    }
+  }
+}
+.social-elements.big-soc-icon{
+  li {
+    width: 40px;
+    height: 40px;
+    a {
+      font-size: 24px;
+      padding-left: 5px;
+    }
+  }
+
+}
+.social-elements.small-soc-icon{
+  li {
+    width: 20px;
+    height: 20px;
+    a {
+      font-size: 12px;
+      padding-left: 3px;
+      &.vkontakte {
+        span {
+          vertical-align: sub;
+        }
+      }
+
+    }
+  }
+}
+

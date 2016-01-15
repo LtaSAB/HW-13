@@ -1,6 +1,7 @@
 .h-page {
   color: $nav-color;
   font-weight: 400;
+  @include prefix(background-size, cover, o moz webkit);
   .container-fluid {
       padding: 10px 25px;
       form {

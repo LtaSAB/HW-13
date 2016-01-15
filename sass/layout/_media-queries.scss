@@ -21,8 +21,42 @@
 @media screen and (min-width:$xs-width) and (max-width:$sm-width - (1)) {
 
 }
-@media screen and (min-width: 650px) and (max-width:$sm-width - (1)){
-
+@media screen and  (min-width: 550px) and (max-width: $md-width - 1){
+  .our-parthner {
+    .parthner-describe {
+      &>li {
+        width: 50%;
+        float: left;
+        padding-right: 10px;
+        &:nth-child(2n) {
+          padding-right: 0;
+        }
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 650px) {
+  .blockquote-sergey {
+    .container-fluid{
+      .quote {
+        width: 75%;
+        h2 {
+          q {
+            padding-right: 30%;
+          }
+          span {
+            right: 40%;
+          }
+        }
+      }
+      .sergey-quote {
+        display: block;
+      }
+    }
+  }
 }
 @media screen and (max-width:$md-width - (1)){
   .flexslider {
@@ -64,6 +98,16 @@
           clear: both;
         }
       }
+    }
+  }
+  .tv-video {
+    .video-section {
+      .group-of-video {
+        margin-top: 0;
+      }
+    }
+    .videos-category {
+      text-align: left;
     }
   }
 }
@@ -120,7 +164,68 @@
 
     }
   }
-
+  .tv-video {
+    .video-top {
+      video {
+        min-height: 350px;
+      }
+    }
+    .group-of-video {
+      article {
+        video {
+          min-height: 170px;
+        }
+      }
+    }
+    .videos-category {
+      ul {
+        li {
+          a {
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+  .our-parthner {
+    .parthner-describe {
+      &>li {
+        width: 20%;
+        float: left;
+        padding-right: 45px;
+        &:nth-child(5n) {
+          padding-right: 0;
+        }
+        &:nth-child(5n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  .send-request {
+    .container-fluid {
+      text-align: left;
+    }
+  }
+  .f-page {
+    .author {
+      text-align: left;
+      .copyright {
+        display: inline-block;
+        vertical-align: top;
+        width: 33%;
+        &:last-of-type {
+          padding-right: 200px;
+        }
+      }
+      .social-elements {
+        display: inline-block;
+        width: (100/3)*1%;
+        vertical-align: top;
+        margin-top: 0;
+      }
+    }
+  }
 }
 @media screen and (min-width:$lg-width) {
   .flexslider {

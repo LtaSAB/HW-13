@@ -44,6 +44,7 @@ body {
 ul {
   padding-left: 0;
   margin-bottom: 0;
+  list-style-type: none;
 }
 .h-page {
   background: url("../img/header-bg.jpg") no-repeat ;
@@ -51,20 +52,27 @@ ul {
     background: rgba(50, 50,50, 0.65);
   }
 }
-.m-page {
+.m-page, .f-page {
   .container-fluid{
     max-width: 1000px;
-    padding: 0 25px;
+    padding: 0 15px;
   }
 }
 h2 {
   font-size: $h2-font-size;
   font-weight: $h2-font-weight;
   color: $second-color;
+  .tv-video & {
+    color: white;
+  }
 }
 h3 {
   font-size: $h3-font-size;
   color: $main-color;
+  .tv-video & {
+    font-size: 2em;
+    color: white;
+  }
 }
 a:hover {
   color: $link-color-hover;
@@ -72,11 +80,26 @@ a:hover {
 .news {
   background: url(../img/news-bg.png) no-repeat;
 }
-.h-page,.news {
+.our-parthner {
+  background: url(../img/news-bg.png) no-repeat;
   @include prefix(background-size, cover, o moz webkit);
 }
 span.price {
   color: #4c93c3;
   font-size: (16/12)*1em;
   font-weight: 900;
+}
+video {
+  width: 100%;
+  border: 5px solid white ;
+}
+.social-elements {
+  li {
+    display: inline-block;
+  }
+}
+.send-request {
+  .container-fluid{
+    padding: 0 15px;
+  }
 }
