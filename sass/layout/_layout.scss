@@ -39,6 +39,7 @@ body {
     text-decoration: $link-text-decoration;
     color: inherit;
     transition: $link-transition;
+    outline: none;
   }
 }
 ul {
