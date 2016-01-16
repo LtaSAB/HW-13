@@ -5,6 +5,12 @@
     color: #969696;
     li {
       padding-top: 40px;
+      &:nth-child(odd) {
+        padding-left: 0;
+      }
+      &:nth-child(even) {
+        padding-right: 0;
+      }
     }
   }
   .author {

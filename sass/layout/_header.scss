@@ -3,12 +3,12 @@
   font-weight: 400;
   @include prefix(background-size, cover, o moz webkit);
   .container-fluid {
-      padding: 10px 25px;
+      padding: 0 25px;
       form {
         position: relative;
-        margin-right: 0;
-        float: left;
+        margin-top: 10px;
         margin-left: 5%;
+        float: left;
         input {
           outline: none;
           border: none;
@@ -32,6 +32,7 @@
     }
     nav {
       position: relative;
+      z-index: 99;
       ul {
         list-style-type: none;
         font-size: 1.5em;
@@ -45,6 +46,9 @@
               width: 50%;
               float: left;
               padding: 20px 30px 40px;
+			  white-space: nowrap;
+			  text-overflow: ellipsis;
+			  overflow: hidden;
               ul {
                 li {
                   padding: 10px 0;
@@ -66,7 +70,7 @@
       .nav-btn {
         display: inline-block;
         position: absolute;
-        top: 0;
+        top: 10px;
         left: -45px;
         border: 1px solid #ddd;
         border-radius: 4px;
@@ -79,7 +83,7 @@
           & + ul {
             display: block !important;
             position: fixed;
-            top: 55px;
+            top: 50px;
             left: -20px;
             z-index: 9999;
             width: 100%;
@@ -115,7 +119,7 @@
       font-size: 32px;
       opacity: 0.25;
       float: right;
-      padding: 0 15px 0 10px;
+      padding: 10px 15px 10px 10px;
       &:hover {
         color: #dfad00;
         opacity: 0.8;

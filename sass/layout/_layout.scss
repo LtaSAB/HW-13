@@ -77,10 +77,7 @@ h3 {
 a:hover {
   color: $link-color-hover;
 }
-.news {
-  background: url(../img/news-bg.png) no-repeat;
-}
-.our-parthner {
+.our-parthner, .propositions, .news {
   background: url(../img/news-bg.png) no-repeat;
   @include prefix(background-size, cover, o moz webkit);
 }

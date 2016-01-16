@@ -19,7 +19,30 @@
 
 }
 @media screen and (min-width:$xs-width) and (max-width:$sm-width - (1)) {
-
+  .propositions {
+    section {
+      article {
+        padding: 0 15px 55px;
+        float: left;
+        width: 50%;
+        &:nth-child(even) {
+          padding-right: 0;
+        }
+        &:nth-child(odd) {
+          padding-left: 0;
+        }
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  .catalog {
+    .left-sidebar {
+    }
+    .right-sidebar {
+    }
+  }
 }
 @media screen and  (min-width: 550px) and (max-width: $md-width - 1){
   .our-parthner {
@@ -84,11 +107,41 @@
 
 }
 @media screen and (min-width:$sm-width) and (max-width:$md-width - (1)) {
+  .describe-full {
+    .social-share {
+        text-align: center;
+    }
+  }
 }
 @media screen and (min-width:$sm-width) {
   .news {
     article:nth-child(4n+1) {
       clear: both;
+    }
+  }
+  .catalog {
+    nav.choose-category{
+      ul {
+        li {
+          float: left;
+          a {
+            padding-left: 0 ;
+          }
+        }
+      }
+    }
+    .right-sidebar {
+      section {
+        margin-top: 35px;
+        article {
+          &:nth-child(3n+1) {
+            clear: both;
+          }
+          h3 {
+            text-align: left;
+          }
+        }
+      }
     }
   }
   .recomended {
@@ -110,6 +163,27 @@
       text-align: left;
     }
   }
+  .describe-full {
+    h2 {
+      text-align: left;
+    }
+    .product-icon {
+      text-align: left;
+      img {
+        max-width: 100%;
+      }
+    }
+    .product-parameters {
+      margin-top: 0;
+      text-align: left;
+      dl {
+        text-align: left;
+      }
+      .button {
+        margin-bottom: 130px;
+      }
+    }
+  }
 }
 @media screen and (min-width:$md-width) {
   .h-page {
@@ -124,20 +198,24 @@
         nav {
           float: left;
           width: calc(65% - 65px);
-          padding-left: 50px;
+          padding-left: 20px;
           &>ul {
+            padding-left: 30px;
+            position: relative;
             &>li {
               float: left;
-              padding: 5px 20px 5px 0;
+              padding: 15px 20px 15px 0;
               &:last-child {
                 padding-right: 0;
               }
-              &>a:hover+.upper-menu {
-                display: block ;
-                position: fixed;
+              &:hover>.upper-menu {
+                display: block;
+                position: absolute;
                 z-index:9;
                 top: 55px;
+                left: 0;
                 background: rgba(50, 50,50, 0.65);
+                width: 115%;
             }
               .upper-menu {
                 display: none;
@@ -145,9 +223,6 @@
               }
             }
           }
-        }
-        .fa-shopping-cart {
-          padding: 0 15px 0 10px;
         }
       }
     }
@@ -207,6 +282,17 @@
       text-align: left;
     }
   }
+  .catalog {
+    .right-sidebar {
+      section {
+        article {
+          &:nth-child(3n+1) {
+            clear: both;
+          }
+        }
+      }
+    }
+  }
   .f-page {
     .author {
       text-align: left;
@@ -223,6 +309,27 @@
         width: (100/3)*1%;
         vertical-align: top;
         margin-top: 0;
+      }
+    }
+  }
+  .propositions {
+    section {
+      article {
+        padding: 0 15px 55px;
+        float: left;
+        width: 20%;
+        &:nth-child(5n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  .describe-full {
+    .social-share {
+      li {
+        display: block;
+        float: left;
+        width: (100/3)*1%;
       }
     }
   }
@@ -246,10 +353,10 @@
     &:hover {
       .flex-direction-nav {
         .flex-prev{
-          left: -190px;
+          left: -100px;
         }
         .flex-next {
-          right: -190px;
+          right: -100px;
         }
       }
     }
