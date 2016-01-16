@@ -135,6 +135,22 @@
           margin-left: 5px;
           display: inline-block;
           font-weight: 300;
+          position: relative;
+          &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 4px;
+            left: -11px;
+            border: 5px solid transparent;
+            border-right: 6px solid #bbbfc4;
+          }
+          &:after {
+            left: -10px;
+            border-right: 6px solid white;
+          }
         }
       }
     }
